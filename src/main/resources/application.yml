@@ -23,7 +23,15 @@ spring:
         - id: orderstatus
           uri: http://localhost:8084
           predicates:
-            - Path=/orderStatuses/** 
+            - Path=/orderStatuses/**
+        - id: Marketing
+            uri: http://localhost:8085
+            predicates:
+              - Path=/marketings/**
+        - id: marketingCustomer
+            uri: http://localhost:8086
+            predicates:
+              - Path=/marketingCustomers/**
       globalcors:
         corsConfigurations:
           '[/**]':
