@@ -54,11 +54,19 @@ spring:
         - id: Installation
           uri: http://Installation:8080
           predicates:
-            - Path=/installations/** 
+            - Path=/installations/**
+        - id: Marketing
+            uri: http://Marketing:8080
+            predicates:
+              - Path=/marketings/**
         - id: orderstatus
           uri: http://orderstatus:8080
           predicates:
-            - Path=/orderStatuses/** 
+            - Path=/orderStatuses/**
+        - id: marketingCustomer
+            uri: http://marketingCustomer:8080
+            predicates:
+              - Path=/marketingCustomers/**
       globalcors:
         corsConfigurations:
           '[/**]':
