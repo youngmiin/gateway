@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "teamdgateway"
+    _PROJECT_NAME: "admin02-gateway"
 
 phases:
   install:
