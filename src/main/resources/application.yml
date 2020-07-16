@@ -25,13 +25,13 @@ spring:
           predicates:
             - Path=/orderStatuses/**
         - id: Marketing
-            uri: http://localhost:8085
-            predicates:
-              - Path=/marketings/**
+          uri: http://localhost:8085
+          predicates:
+            - Path=/marketings/**
         - id: marketingCustomer
-            uri: http://localhost:8086
-            predicates:
-              - Path=/marketingCustomers/**
+          uri: http://localhost:8086
+          predicates:
+            - Path=/marketingCustomers/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -64,17 +64,17 @@ spring:
           predicates:
             - Path=/installations/**
         - id: Marketing
-            uri: http://Marketing:8080
-            predicates:
-              - Path=/marketings/**
+          uri: http://Marketing:8080
+          predicates:
+            - Path=/marketings/**
         - id: orderstatus
           uri: http://orderstatus:8080
           predicates:
             - Path=/orderStatuses/**
         - id: marketingCustomer
-            uri: http://marketingCustomer:8080
-            predicates:
-              - Path=/marketingCustomers/**
+          uri: http://marketingCustomer:8080
+          predicates:
+            - Path=/marketingCustomers/**
       globalcors:
         corsConfigurations:
           '[/**]':
